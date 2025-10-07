@@ -8,9 +8,69 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textEnterTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="20dp"
+        android:text="Enter Task"
+        app:layout_constraintEnd_toStartOf="@+id/textTaskInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textWhoDidIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="571dp"
+        android:text="Who did it?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textWhoDidItInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEnterTask" />
+
+    <EditText
+        android:id="@+id/textTaskInput"
+        android:layout_width="142dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="125dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="NameTell all the puppies you see"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textWhoDidItInput"
+        android:layout_width="142dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="571dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Sophia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textWhoDidIt"
+        app:layout_constraintTop_toBottomOf="@+id/textTaskInput"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="286dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="523dp"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
